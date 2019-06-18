@@ -20,8 +20,10 @@ public class HelloMain {
 		
 		System.out.println("프로그램 시작!!!!!");
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/kitri/hello3/applicationContext.xml");
+		
 		System.out.println("설정파일 읽었다!!!!!");
 		HelloService helloService = context.getBean("hs", HelloService.class);
+		
 		System.out.println("service 얻어왔다!!!!!");
 		String msg = helloService.hello("안효인");
 		
@@ -37,6 +39,12 @@ public class HelloMain {
 		System.out.println("111111111111111111111111111");
 		HelloService h4 = context.getBean("hs", HelloService.class);
 		System.out.println(h3 + "    " + h4);
+		
+		System.out.println("------------------------------------------------------sdfsdfsdf");
+		HelloService h5 = context.getBean("helloservice", HelloService.class);
+		String msg2 = h5.hello("권범준");
+		System.out.println("안녕하세요" + msg2 + "님");
+		//System.out.println(msg2);
 		
 		
 		

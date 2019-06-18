@@ -3,7 +3,7 @@ package com.kitri.hello3;
 public class HelloServiceEng implements HelloService {
 
 	public HelloServiceEng() {
-		System.out.println("HelloServiceEng 생성자 호출!!!!!");
+		System.out.println("HelloServiceEng 안녕하세요!!!!!");
 	}
 	
 	public String hello(String name) {
